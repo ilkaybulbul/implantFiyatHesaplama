@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>implant Hesaplama</title>
+</head>
+<body>
+    <div class="container" > 
+        <h1>İmplant Fiyat Hesaplama</h1>
+         <!-- implant hesaplama alanı -->
+    <div class="implantCalculate">
+        <div class="made">
+            <h4>Menşei</h4>
+            <div class="div1">
+                <input class="checkbox" type="checkbox" name="yerli" id="yerli" value="5000">
+                <label for="yerli">Yerli</label>    
+            </div>
+            <div class="div1">
+                <input class="checkbox" type="checkbox" name="ithal" id="ithal" value="">
+                <label for="ithal">Ithal</label> 
+                <select name="" id="brandChoose">
+                    <option selected value="XGATE">XGATE / Global</option>
+                    <option value="Roott">Roott</option>
+                </select>    
+            </div> 
+        </div>
+        <div class="piece">
+            <div class="impPiece">
+                <input type="number" class="implantPiece" placeholder="İmplant sayısını giriniz." value="1" >
+            
+            </div>
+            <div class="total">
+                <button class="calculateBtn" type="submit">Hesapla</button>
+                <label class="totalPrice" id="totalPrice">TOTAL FİYAT</label>
+                <label class="nowEurPrice">Anlık Euro : </label> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Cron hesaplama alanı-->
+    <div class="implantCalculate">
+        <div class="made">
+            <h4>Malzeme</h4>
+            <div class="div1">
+                <input class="checkbox" type="checkbox" name="porselen" id="porselen" >
+                <label for="porselen">porselen</label>    
+            </div>
+            <div class="div1">
+                <input class="checkbox" type="checkbox" name="zirkon" id="zirkon" value="">
+                <label for="zirkon">zirkonyum</label>   
+            </div> 
+        </div>
+        <div class="piece">
+            <div class="impPiece">
+                <input type="number" id="cronPiece" class="implantPiece" placeholder="İmplant sayısını giriniz." value="1" >
+            
+            </div>
+            <div class="total">
+                <button id="cronBtn" class="calculateBtn" type="submit">Hesapla</button>
+                <label id= "cronPriceLabel"class="totalPrice" id="totalPrice">TOTAL FİYAT</label> 
+            </div>
+        </div>
+    </div>
+        <button class="calculateBtn">Toplu Hesapla</button>
+        <label id="totalCalculate" class="totalPrice">Toplam Fiyat: </label>
+   </div>
+        
+    </div>
+   
+   
+    <script src="currency.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html> 
